@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: movies-api
+    ports:
+      - "3002:3001"
+    depends_on:
+      - postgres
+    environment:
+      - CONFIG_PATH=/app/conf.yaml
+    volumes:
+      - ./conf.yaml:/app/conf.yaml
+    networks:
+      - movies-network
+
+  postgres:
+    image: postgres:14-alpine
+    container_name: movies-postgres
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_USER=dev_user
+      - POSTGRES_PASSWORD=dev_pass
+      - POSTGRES_DB=services
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - movies-network
+
+networks:
+  movies-network:
+    driver: bridge
+
+volumes:
+  postgres-data: 

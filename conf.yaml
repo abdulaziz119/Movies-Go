@@ -1,0 +1,8 @@
+db_host: "postgres"
+db_port: "5432"
+db_username: "dev_user"
+db_name: "services"
+db_password: "dev_pass"
+port: "3001"
+
+jwt_secret: "task-manager-secret-key"
