@@ -3,7 +3,7 @@ package users
 import (
 	"Movies-Go/internal/repository/postgres/movies"
 	"Movies-Go/internal/repository/postgres/users"
-	"Movies-Go/internal/util/password"
+	"Movies-Go/internal/utils/password"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"strconv"

@@ -4,7 +4,7 @@ import (
 	"Movies-Go/internal/entity"
 	"Movies-Go/internal/pkg/auth"
 	"Movies-Go/internal/repository/postgres/users"
-	"Movies-Go/internal/util/password"
+	"Movies-Go/internal/utils/password"
 	"context"
 	"net/http"
 	"time"

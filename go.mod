@@ -10,6 +10,7 @@ require (
 	github.com/uptrace/bun/dialect/pgdialect v1.2.11
 	github.com/uptrace/bun/driver/pgdriver v1.2.11
 	github.com/uptrace/bun/extra/bundebug v1.2.11
+	go.uber.org/fx v1.20.0
 	golang.org/x/crypto v0.35.0
 	gopkg.in/yaml.v2 v2.4.0
 )
@@ -42,6 +43,10 @@ require (
 	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
 	go.opentelemetry.io/otel v1.34.0 // indirect
 	go.opentelemetry.io/otel/trace v1.34.0 // indirect
+	go.uber.org/atomic v1.7.0 // indirect
+	go.uber.org/dig v1.17.0 // indirect
+	go.uber.org/multierr v1.6.0 // indirect
+	go.uber.org/zap v1.23.0 // indirect
 	golang.org/x/arch v0.6.0 // indirect
 	golang.org/x/net v0.21.0 // indirect
 	golang.org/x/sys v0.30.0 // indirect
